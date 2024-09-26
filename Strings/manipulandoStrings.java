@@ -18,7 +18,7 @@ public class manipulandoStrings {
 //	 
 //	 //4.Substituir uma parte da string:
 //	 String novoTexto = texto.replace("Java", "PHP");
-//	 System.out.println("Texto após a substituição: " + novoTexto);
+//	 System.out.println("Texto após bua substituição: " + novoTexto);
 //	 
 //	 //5.Buscar por uma substring:
 //	 int posicao = texto.indexOf("Curso");

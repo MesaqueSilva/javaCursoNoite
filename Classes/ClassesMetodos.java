@@ -24,6 +24,8 @@ public class ClassesMetodos {
 //	 String novoTexto = texto.replace("Java", "PHP");
 //	 System.out.println("Texto após a substituição: " + novoTexto);
 	
+	//Metodo 3:
+	
 	String nome = "Mesaque Jose";
 	
 	public String palavrasInvertidas = nome.replace("Jose", "Silva"); 
@@ -32,6 +34,8 @@ public class ClassesMetodos {
 		return new StringBuilder(texto).reverse().toString();
 	}
 	
+	// Metodo 4:
+	
 	public int fatorial(int numero ) {
 		if ( numero == 0 || numero == 1 ) {
 			return 1;
@@ -39,6 +43,18 @@ public class ClassesMetodos {
 		return numero * fatorial(numero - 1);
 		
 	}
+	
+	//Metodo 5:
+	public int maiorNumero(int[] numeros) {
+		int maior = numeros[0];
+		for ( int numero : numeros ) {
+			if ( numero > maior ) {
+				maior = numero;
+			}
+		}
+		return maior;
+	}
+	
 	
 	
 	// Este método executa outros método.
@@ -53,7 +69,9 @@ public class ClassesMetodos {
 		System.out.println("O número 4 é par! " + util.ehPar(5));
 		System.out.println("Palavras invertidas: "+ util.palavrasInvertidas);
 		System.out.println("Palavras invertidas: "+ util.invertString("Java"));
-		System.out.println("O Fatorial é "+ util.fatorial(5));
+		System.out.println("O Fatorial de 5 "+ util.fatorial(5));
+		int[] numeros = {1, 8, 55, 66, 1025};
+		System.out.println("O maior numero é "+ util.maiorNumero(numeros));
 
 	}
 

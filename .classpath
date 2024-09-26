@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="Strings"/>
 	<classpathentry kind="src" path="Classes"/>
 	<classpathentry kind="src" path="OutrosCódigos"/>
+	<classpathentry kind="src" path="Arrays"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
