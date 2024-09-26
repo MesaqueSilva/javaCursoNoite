@@ -8,11 +8,11 @@ public class manipulandoStrings {
 //	 //1.Comprimento da String
 //	 System.out.println("Comprimento da string: " + texto.length());
 	 
-//	 // Concatenar String
+//	 //2.Concatenar String
 //	 String textoCompleto = texto + "\n" + texto2;
 //	 System.out.println("Texto Completo:" + textoCompleto);
 //	 
-//	 //Coverter para Maiusculas e minusculas:
+//	 //3.Coverter para Maiusculas e minusculas:
 //	 System.out.println("MAIUSCULAS: " + texto.toUpperCase());
 //	 System.out.println("minusculas " + texto2.toLowerCase());
 //	 
@@ -34,8 +34,8 @@ public class manipulandoStrings {
 //	 for ( String parteDoNome : parteDoNomeCompleto ) {
 //		 System.out.println(parteDoNome);
 	 //8.Remover Espaços
-	 String textoComEspacos = "   Texto com espaços.        ";
-	 System.out.println("Texto sem espaços: '" + textoComEspacos.trim().replaceAll("\\s+", " ") + "'");
+//	 String textoComEspacos = "   Texto com espaços.        ";
+//	 System.out.println("Texto sem espaços: '" + textoComEspacos.trim().replaceAll("\\s+", " ") + "'");
 	 // O Comando: "\\s+ " => captura todos os espaços da string
 	 // O comando " " => substitui todos os espaços por apenas 1.
 	 }
