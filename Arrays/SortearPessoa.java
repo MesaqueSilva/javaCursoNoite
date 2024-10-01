@@ -24,7 +24,7 @@ public class SortearPessoa {
             if (!nome.trim().isEmpty()) { // Verifica se o nome não está vazio
                 nomes.add(nome);
             } else {
-                System.out.println("Nome inválido. Tente novamente.");
+                System.out.println("Nome innome]válido. Tente novamente.");
             }
         }
 
