@@ -13,5 +13,8 @@
 	<classpathentry kind="src" path="Arrays"/>
 	<classpathentry kind="src" path="Exercicios2"/>
 	<classpathentry kind="src" path="Herenças"/>
+	<classpathentry kind="src" path="Banco"/>
+	<classpathentry kind="src" path="API"/>
+	<classpathentry kind="lib" path="C:/Users/Noite/Downloads/json-20210307.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
