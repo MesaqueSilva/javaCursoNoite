@@ -15,6 +15,7 @@
 	<classpathentry kind="src" path="Herenças"/>
 	<classpathentry kind="src" path="Banco"/>
 	<classpathentry kind="src" path="API"/>
+	<classpathentry kind="src" path="Crud"/>
 	<classpathentry kind="lib" path="C:/Users/Noite/Downloads/json-20210307.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
