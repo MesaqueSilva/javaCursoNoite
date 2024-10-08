@@ -1,27 +1,28 @@
 import java.util.Scanner;
 
 public class CrudArray {
-	// Arrays para armazenar nome e idade
+	
 	static String[] nomes = new String[10];
 	static int[] idades = new int[10];
 	static int contador = 0;
 
 	public static void main(String[] args) {
-		Scanner sc =  new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int opcao;
-		
+
 		do {
 			System.out.println("\n--- Menu ---");
 			System.out.println("1. Adicionar usuário");
 			System.out.println("2. Exibir usuários");
 			System.out.println("3. Atualizar usuário");
 			System.out.println("4. Deletar usuário");
-			System.out.println("5. sair");
-			System.out.println("Escolha uma opção: ");
+			System.out.println("5. Sair");
+			System.out.print("Escolha uma opção: ");
 			opcao = sc.nextInt();
-			
-			switch(opcao) {
-			case 1:
+			sc.nextLine();
+
+			switch (opcao) {
+			case 7:
 				adicionarUsuario(sc);
 				break;
 			case 2:
@@ -32,30 +33,78 @@ public class CrudArray {
 				break;
 			case 4:
 				deletarUsuario(sc);
-				break
+				break;
 			case 5:
 				System.out.println("Saindo...");
 				break;
 			default:
 				System.out.println("Opção Inválida.");
-			}	
-		}
-		while ( opcao != 5 );
-			sc.close();
+			}
+		} while (opcao != 5);
+		sc.close();
 	}
 
-	// Criar(Adicionar usuario):
+	
 	public static void adicionarUsuario(Scanner sc) {
 		if (contador < nomes.length) {
-			System.out.print("Digite o nome: ");
-			String nome = sc.next();
+			System.out.print("Digite o nome: "); 
+			String nome = sc.nextLine(); 
 			System.out.print("Digite a idade: ");
-			String idade = sc.nextInt();
+			int idade = sc.nextInt();
 			nomes[contador] = nome;
 			idades[contador] = idade;
 			contador++;
-			System.out.println("Usuário cadastrado com sucesso");
+			System.out.println("Usuário cadastrado com sucesso!");
+		} else {
+			System.out.println("Limite de usuários atingido!");
 		}
 	}
 
+	
+	public static void exibirUsuarios() {
+		if (contador == 0) {
+			System.out.println("Nenhum usuário cadastrado!");
+		} else {
+			for (int i = 0; i < contador; i++) {
+				System.out.println((i + 1) + ". Nome: " + nomes[i] + ", Idade: " + idades[i]);
+			}
+		}
+	}
+
+
+	public static void atualizarUsuario(Scanner sc) {
+		System.out.print("Digite o número do usuário a ser atualizado: ");
+		int index = sc.nextInt() - 1;
+
+		if (index >= 0 && index < contador) {
+			sc.nextLine(); // Consumir a quebra de linha após nextInt()
+			System.out.print("Digite o novo nome: ");
+			String nome = sc.nextLine(); // Usar nextLine() para capturar o nome inteiro
+			System.out.print("Digite a nova idade: ");
+			int idade = sc.nextInt();
+			nomes[index] = nome;
+			idades[index] = idade;
+			System.out.println("Usuário atualizado com sucesso!");
+		} else {
+			System.out.println("Usuário não encontrado!");
+		}
+	}
+
+	public static void deletarUsuario(Scanner sc) {
+		System.out.print("Digite o número do usuário a ser deletado: ");
+		int index = sc.nextInt() - 1;
+
+		if (index >= 0 && index < contador) {
+			for (int i = index; i < contador - 1; i++) {
+				nomes[i] = nomes[i + 1];
+				idades[i] = idades[i + 1];
+			}
+			nomes[contador - 1] = null;
+			idades[contador - 1] = 0;
+			contador--;
+			System.out.println("Usuário deletado com sucesso!");
+		} else {
+			System.out.println("Usuário não encontrado!");
+		}
+	}
 }
