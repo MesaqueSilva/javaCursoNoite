@@ -1,4 +1,5 @@
 
+
 public class ClassesMetodos {
 
 	
@@ -66,7 +67,7 @@ public class ClassesMetodos {
 		
 		// Chamando os métodos
 		System.out.println("soma de 5 e 3: "+ util.mult(5,5));
-		System.out.println("O número 4 é par! " + util.ehPar(5));
+		System.out.println("O número 135 é par! " + util.ehPar(135));
 		System.out.println("Palavras invertidas: "+ util.palavrasInvertidas);
 		System.out.println("Palavras invertidas: "+ util.invertString("Java"));
 		System.out.println("O Fatorial de 5 "+ util.fatorial(5));
