@@ -20,6 +20,7 @@
 	<classpathentry kind="src" path="Interfaces"/>
 	<classpathentry kind="src" path="AtividadesInterfaces"/>
 	<classpathentry kind="src" path="Jar"/>
+	<classpathentry kind="src" path="javaStream"/>
 	<classpathentry kind="lib" path="C:/Users/Noite/Downloads/json-20210307.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>

@@ -27,7 +27,7 @@ public class ContadorCliques extends JFrame {
 
         // JLabel para mostrar o valor do contador
         contadorLabel = new JLabel("Contador: 0");
-        contadorLabel.setBounds(765, 30, 100, 25);
+        contadorLabel.setBounds(100, 30, 100, 25);
         panel.add(contadorLabel);
 
         // JButton para incrementar o contador
